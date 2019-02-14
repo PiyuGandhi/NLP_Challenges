@@ -102,7 +102,7 @@ if __name__ == '__main__':
     for i in range(int(input())):
         x = input()
         sen = " ".join(word for word in words(x))
-        test.append(x)
+        test.append(sen)
 
     predicted = model.predict(np.array(test))
     for i in predicted:
